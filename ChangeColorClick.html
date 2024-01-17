@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change the color on Click</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            font-size: 20px;
+            padding: 15px;
+            border-radius: 25px;
+            background-color: aquamarine;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="randomcolor()">Press me to change</button>
+    <script>
+        function randomcolor() {
+            const colorarray=["green","red","blue","orange","pink","yellow","voilet"];
+            document.body.style.backgroundColor=colorarray[Math.floor(Math.random()*colorarray.length)];
+            
+        }
+    </script>
+</body>
+</html>
